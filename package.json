@@ -1,0 +1,14 @@
+{
+    "package": "api",
+    "devDependencies": {
+        "@napi-rs/cli": "^1.0.0"
+    },
+    "napi": {
+        "name": "api"
+    },
+    "scripts": {
+        "build": "napi build --target x86_64-unknown-linux-gnu --release",
+        "build:debug": "napi build",
+        "start": "npm run build:debug && node run.js"
+    }
+}
